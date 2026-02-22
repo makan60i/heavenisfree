@@ -3,21 +3,34 @@
   <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Serveur PATOU - Accès Externe</title>
+        <title>Portail PATOU</title>
       <style>
-                body { font-family: sans-serif; text-align: center; padding: 50px; background-color: #141414; color: white; }
-                .btn { display: block; width: 200px; margin: 20px auto; padding: 15px; background: #0085ff; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
-                .btn-series { background: #e50914; } /* Rouge pour les séries */
+                body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; padding: 40px; background-color: #0a0a0a; color: #ffffff; }
+                h1 { color: #0085ff; }
+                .container { max-width: 400px; margin: 0 auto; background: #1a1a1a; padding: 20px; border-radius: 15px; border: 1px solid #333; }
+                .btn { display: block; margin: 15px 0; padding: 15px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: 0.3s; }
+                /* Style Jellyfin */
+                .jellyfin { background: #0085ff; color: white; }
+                .jellyfin:hover { background: #0066cc; }
+                /* Style Jellyseerr */
+                .jellyseerr { background: #e50914; color: white; }
+                .jellyseerr:hover { background: #b20710; }
+                .footer { margin-top: 30px; font-size: 0.8em; color: #555; }
             </style>
   </head>
   <body>
-        <h1>Bienvenue sur le Serveur de Patrick</h1>
-      <p>Choisis ta bibliothèque :</p>
-      
-      <a href="URL_TUNNEL_FILMS" class="btn">Accès FILMS</a>a>
-      <a href="URL_TUNNEL_SERIES" class="btn btn-series">Accès SÉRIES</a>a>
-  
-      <p style="font-size: 0.8em; color: #666;">Dernière mise à jour : 22/02/2026</p>
+        <div class="container">
+                  <h1>Serveur PATOU</h1>
+                <p>Accès externe sécurisé</p>
+                
+                <a href="URL_TUNNEL_JELLYFIN" class="btn jellyfin">🎬 Regarder (Jellyfin)</a>a>
+                <a href="URL_TUNNEL_JELLYSEERR" class="btn jellyseerr">➕ Demander un film ou une série (Jellyseerr)</a>a>
+                
+                <div class="footer">
+                            Statut : <span style="color: #2ecc71;">En ligne</span>span><br>
+                            Dernière mise à jour automatique effectuée.
+                </div>div>
+        </div>div>
   </body>
 </html>html>
 </p></h1>
